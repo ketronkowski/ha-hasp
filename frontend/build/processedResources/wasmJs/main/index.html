@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HA-HASP Designer</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #1e1e1e;
+        }
+
+        #error-overlay {
+            color: #ff5252;
+            padding: 20px;
+            font-family: monospace;
+            background: #2b1111;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ComposeTarget"></div>
+    <div id="error-overlay"></div>
+    <script type="module">
+        import { main } from "./ha-hasp-frontend-wasm-js.mjs";
+
+        const errorOverlay = document.getElementById('error-overlay');
+
+        function showError(e) {
+            console.error("Main crash:", e);
+            errorOverlay.style.display = 'block';
+            errorOverlay.innerHTML = `<h1>Fatal Error during initialization</h1>
+                                     <p>Error: ${e.message}</p>
+                                     <pre>${e.stack || "No stack trace"}</pre>`;
+        }
+
+        try {
+            console.log("Starting main()...");
+            main();
+        } catch (e) {
+            showError(e);
+        }
+
+        window.addEventListener('unhandledrejection', function (event) {
+            showError(event.reason);
+        });
+    </script>
+</body>
+
+</html>

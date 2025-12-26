@@ -1,0 +1,11 @@
+abi_version=1.201.0
+builtins_platform=WASM
+compiler_version=2.1.0
+depends=components.resources\:library components.ui-tooling-preview\:library io.ktor\:ktor-client-content-negotiation io.ktor\:ktor-client-js io.ktor\:ktor-client-core io.ktor\:ktor-serialization-kotlinx-json org.jetbrains.compose.material\:material org.jetbrains.compose.material\:material-ripple org.jetbrains.compose.foundation\:foundation org.jetbrains.compose.animation\:animation org.jetbrains.compose.material\:material-icons-core org.jetbrains.compose.foundation\:foundation-layout org.jetbrains.compose.ui\:ui org.jetbrains.kotlinx\:kotlinx-browser org.jetbrains.compose.animation\:animation-core io.ktor\:ktor-events io.ktor\:ktor-websocket-serialization io.ktor\:ktor-sse io.ktor\:ktor-serialization-kotlinx io.ktor\:ktor-serialization io.ktor\:ktor-websockets io.ktor\:ktor-http io.ktor\:ktor-utils io.ktor\:ktor-io org.jetbrains.kotlinx\:kotlinx-coroutines-core org.jetbrains.kotlinx\:kotlinx-serialization-json-io org.jetbrains.kotlinx\:kotlinx-serialization-json org.jetbrains.kotlinx\:kotlinx-serialization-core org.jetbrains.kotlinx\:kotlinx-io-core org.jetbrains.kotlinx\:kotlinx-io-bytestring org.jetbrains.compose.runtime\:runtime-saveable kotlin org.jetbrains.compose.runtime\:runtime org.jetbrains.compose.ui\:ui-text org.jetbrains.compose.ui\:ui-graphics org.jetbrains.compose.ui\:ui-unit org.jetbrains.skiko\:skiko org.jetbrains.compose.ui\:ui-geometry org.jetbrains.compose.ui\:ui-util org.jetbrains.kotlinx\:atomicfu
+ir_signature_versions=1,2
+jsOutputName=ha-hasp-frontend-wasm-js
+metadata_version=1.4.1
+serializedIrFileFingerprints=2mei82nb9cfrs.1rx0jm4y5apln dpn3kzrf24kh.2wxzup4je49kb 22g1efbrevd6p.72oi61iykbfz q1a18jblaxr6.3rz70cyajgp1f 2npi0mwggq8p.22sq7dp0v7pl1 164k4adkuyn2k.2mf2k1r0usxy 10o5ybclv68qi.3lmlmc6yl9qr4 1r7qkni8bja0k.xofnfy1wj0jm
+serializedKlibFingerprint=1t8apimel0dht.1jlkhjghpc2tu
+unique_name=ha-hasp\:frontend
+wasm_targets=wasm-js
